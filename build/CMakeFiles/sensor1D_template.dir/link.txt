@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,-soname,libsensor1D_template.so -o libsensor1D_template.so CMakeFiles/sensor1D_template.dir/src/sensor1D_template.o 

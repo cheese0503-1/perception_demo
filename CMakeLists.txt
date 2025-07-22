@@ -1,0 +1,8 @@
+project(perception_demo)
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+include_directories(${CMAKE_SOURCE_DIR}/include)
+add_library(sensor1D_template SHARED src/sensor1D_template.cpp)
+add_executable(main src/main.cpp)
+target_link_libraries(main sensor1D_template)
