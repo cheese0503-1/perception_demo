@@ -2,16 +2,14 @@
 
 git clone https://github.com/rhksgnl/perception_demo.git
 
-cd perception_demo
 
+cd perception_demo
 
 cd build
 
-
 cmake ..
-
 
 make
 
-
 ./main
+
