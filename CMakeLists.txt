@@ -1,8 +1,18 @@
+cmake_minimum_required(VERSION 3.10)
 project(perception_demo)
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-add_compile_options(-Wall -Wextra -Wpedantic)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_compiler_ID MATCHES "Clang")
+    add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
-include_directories(${CMAKE_SOURCE_DIR}/include)
-add_library(sensor1D_template SHARED src/sensor1D_template.cpp)
-add_executable(main src/main.cpp)
-target_link_libraries(main sensor1D_template)
+
+# 'src/US-016' 디렉토리의 라이브러리를 빌드하도록 지시
+add_subdirectory(src/US-016)
+
+# 'src/US-016'의 main 파일을 사용하여 최종 실행 파일 생성
+add_executable(perception_demo src/US-016/main_US-016.cpp)
+
+# 최종 실행 파일에 'us016_lib' 라이브러리를 연결
+target_link_libraries(perception_demo PRIVATE us016_lib)

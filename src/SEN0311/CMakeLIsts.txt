@@ -1,0 +1,11 @@
+# 이 디렉토리의 모든 .cpp 파일을 찾습니다.
+file(GLOB SEN0311_SOURCES "*.cpp")
+
+# 라이브러리에 포함되면 안 되는 'main_SEN0311.cpp' 파일을 목록에서 제거합니다.
+list(REMOVE_ITEM SEN0311_SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/main_SEN0311.cpp)
+
+
+add_library(sen0311_lib ${SEN0311_SOURCES})
+
+
+target_include_directories(sen0311_lib PUBLIC ${CMAKE_SOURCE_DIR}/include)
