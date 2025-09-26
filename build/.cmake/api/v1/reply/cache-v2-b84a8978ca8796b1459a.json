@@ -34,28 +34,16 @@
 			"value" : "/usr/bin/ar"
 		},
 		{
-			"name" : "CMAKE_BACKWARDS_COMPATIBILITY",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "For backwards compatibility, what version of CMake commands and syntax should this version of CMake try to support."
-				}
-			],
-			"type" : "STRING",
-			"value" : "2.4"
-		},
-		{
 			"name" : "CMAKE_BUILD_TYPE",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel ..."
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -67,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/hwi/Desktop/workspace/\uae30\ud0c0\ub4f1\ub4f1/perception_demo/build"
+			"value" : "/root/perception_demo/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -295,11 +283,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-12"
+			"value" : "/usr/bin/cc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -315,7 +303,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-12"
+			"value" : "/usr/bin/gcc-ar-11"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -331,7 +319,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-12"
+			"value" : "/usr/bin/gcc-ranlib-11"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -531,11 +519,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Enable/Disable output of compile commands during generation."
 				}
 			],
 			"type" : "BOOL",
-			"value" : "TRUE"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -607,7 +595,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/hwi/Desktop/workspace/\uae30\ud0c0\ub4f1\ub4f1/perception_demo"
+			"value" : "/root/perception_demo"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -771,7 +759,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1134,28 +1122,16 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "EXECUTABLE_OUTPUT_PATH",
+			"name" : "US-016_lib_LIB_DEPENDS",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Single output directory for building all executables."
+					"value" : "Dependencies for the target"
 				}
 			],
-			"type" : "PATH",
-			"value" : ""
-		},
-		{
-			"name" : "LIBRARY_OUTPUT_PATH",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Single output directory for building all libraries."
-				}
-			],
-			"type" : "PATH",
-			"value" : ""
+			"type" : "STATIC",
+			"value" : "general;wiringPi;"
 		},
 		{
 			"name" : "perception_demo_BINARY_DIR",
@@ -1167,7 +1143,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/hwi/Desktop/workspace/\uae30\ud0c0\ub4f1\ub4f1/perception_demo/build"
+			"value" : "/root/perception_demo/build"
 		},
 		{
 			"name" : "perception_demo_IS_TOP_LEVEL",
@@ -1191,7 +1167,19 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/hwi/Desktop/workspace/\uae30\ud0c0\ub4f1\ub4f1/perception_demo"
+			"value" : "/root/perception_demo"
+		},
+		{
+			"name" : "us016_lib_LIB_DEPENDS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Dependencies for the target"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "general;wiringPi;"
 		}
 	],
 	"kind" : "cache",

@@ -11,8 +11,8 @@ endif()
 # 'src/US-016' 디렉토리의 라이브러리를 빌드하도록 지시
 add_subdirectory(src/US-016)
 
-# 'src/US-016'의 main 파일을 사용하여 최종 실행 파일 생성
-add_executable(perception_demo src/US-016/main_US-016.cpp)
 
-# 최종 실행 파일에 'us016_lib' 라이브러리를 연결
+add_executable(perception_demo src/US-016/main_US016.cpp)
+
+
 target_link_libraries(perception_demo PRIVATE us016_lib)

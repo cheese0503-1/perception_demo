@@ -120,13 +120,16 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "src/US-016/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/hwi/Desktop/workspace/\uae30\ud0c0\ub4f1\ub4f1/perception_demo/build",
-		"source" : "/home/hwi/Desktop/workspace/\uae30\ud0c0\ub4f1\ub4f1/perception_demo"
+		"build" : "/root/perception_demo/build",
+		"source" : "/root/perception_demo"
 	},
 	"version" : 
 	{

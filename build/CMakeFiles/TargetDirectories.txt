@@ -1,0 +1,6 @@
+/root/perception_demo/build/CMakeFiles/perception_demo.dir
+/root/perception_demo/build/CMakeFiles/edit_cache.dir
+/root/perception_demo/build/CMakeFiles/rebuild_cache.dir
+/root/perception_demo/build/src/US-016/CMakeFiles/us016_lib.dir
+/root/perception_demo/build/src/US-016/CMakeFiles/edit_cache.dir
+/root/perception_demo/build/src/US-016/CMakeFiles/rebuild_cache.dir

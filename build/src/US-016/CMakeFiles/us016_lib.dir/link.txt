@@ -1,0 +1,2 @@
+/usr/bin/ar qc libus016_lib.a CMakeFiles/us016_lib.dir/US016.cpp.o
+/usr/bin/ranlib libus016_lib.a

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/perception_demo.dir/src/US-016/main_US016.cpp.o -o perception_demo  src/US-016/libus016_lib.a -lwiringPi 
